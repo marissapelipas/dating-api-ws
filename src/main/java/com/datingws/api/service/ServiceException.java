@@ -1,0 +1,50 @@
+package com.datingws.api.service;
+
+public class ServiceException extends Exception {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private Object data;
+
+	public Object getData() {
+		return data;
+	}
+
+	public void setData(Object data) {
+		this.data = data;
+	}
+
+	public ServiceException() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public ServiceException(Object data, String message) {
+		super(message);
+		setData(data);
+	}
+
+	public ServiceException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+		super(message, cause, enableSuppression, writableStackTrace);
+		// TODO Auto-generated constructor stub
+	}
+
+	public ServiceException(String message, Throwable cause) {
+		super(message, cause);
+		// TODO Auto-generated constructor stub
+	}
+
+	public ServiceException(String message) {
+		super(message);
+		// TODO Auto-generated constructor stub
+	}
+
+	public ServiceException(Throwable cause) {
+		super(cause);
+		// TODO Auto-generated constructor stub
+	}
+
+}
